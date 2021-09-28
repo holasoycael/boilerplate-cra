@@ -1,46 +1,139 @@
-# Getting Started with Create React App
+# Setup SPA com Crate React App baseado na arquitetura Next.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este boilerplate é inspirado no conteúdo do [Willian](https://willianjusten.com.br) e seu [curso](https://reactavancado.com.br).
 
-## Available Scripts
+## Scripts disponíveis
 
-In the project directory, you can run:
+No diretório do projeto, você pode executar:
 
-### `yarn start`
+### `yarn dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Levanta um servidor do nosso aplicativo CRA em [localhost:3000](http://localhost:3000) em modo de desenvolvimento.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A página será recarregada se você fizer edições. \
+Você também verá quaisquer erros de lint no console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Executa os testes com Jest uma única vez
+
+### `yarn test:watch`
+
+Inicia a cli de testes com o Jest no modo de observação interativa
+
+### `yarn storybook`
+
+Levanta um servidor do Storybook em [localhost:3000](http://localhost:6006)
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compila o aplicativo para produção na pasta de biuld.
+Ele agrupa corretamente o React no modo de produção e otimiza a construção para o melhor desempenho.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A compilação é reduzida e os nomes dos arquivos incluem os hashes.
+Seu aplicativo está pronto para ser implantado!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#
+### `Tecnologias útilizadas`
 
-### `yarn eject`
+  @dependencies
+- [Create React App](https://create-react-app.dev)
+- [react-router-dom](https://reactrouter.com)
+- [styled-components](https://styled-components.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+@devDependencies
+- [Typescript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+- [Storybook](https://storybook.js.org/)
+- [Babel](https://babeljs.io)
+- [ESlint](https://eslint.org)
+- [Prettier](https://prettier.io)
+- [Husky](https://typicode.github.io/husky)
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [Plop](https://plopjs.com/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+>As tecnologias listadas acima no projeto aumentam minha produtividade e simplifica processos dentro da equipe nos dando poderes enorme no ambiente de desenvolviemnto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#
+### `Arquitetura de projeto`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+`PROJECT`
+├── .husky
+│   └── commit-msg
+├── .jest
+│   └── setup.ts
+├── .storybook
+│   ├── main.js
+│   ├── preview-head.html
+│   └── preview.js
+├── .vscode
+│   └── settings.json
+├── generators
+│   ├── templates
+│   │   ├── index.tsx.hbs
+│   │   ├── stories.tsx.hbs
+│   │   ├── styles.tsx.hbs
+│   │   └── test.tsx.hbs
+│   └── plopfile.js
+├── node_modules
+├── public
+│   ├── fonts
+│   │   ├── poppins-v12-latin-300.woff2
+│   │   ├── poppins-v12-latin-600.woff2
+│   │   └── poppins-v12-latin-regular.woff2
+│   ├── img
+│   │   ├── favicon.ico
+│   │   ├── logo192.png
+│   │   └── logo512.png
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── @types
+│   │   ├── jest-styled-components.d.ts
+│   │   └── styled-components.d.ts
+│   ├── app
+│   │   └── routes.tsx
+│   ├── components
+│   │   └── `NAME`
+│   │       ├── index.tsx
+│   │       ├── stories.tsx
+│   │       ├── styles.ts
+│   │       └── test.tsx
+│   ├── contexts
+│   ├── graphql
+│   ├── hooks
+│   ├── pages
+│   │   ├── _app.tsx
+│   │   ├── document.tsx
+│   │   └── index.tsx
+│   ├── services
+│   ├── skeleton
+│   ├── styles
+│   │   ├── global.ts
+│   │   └── theme.ts
+│   ├── templates
+│   │   └── `NAME`
+│   │       ├── index.tsx
+│   │       ├── styles.tsx
+│   │       └── test.tsx
+│   └── utils
+│       ├── exports
+│       ├── modules
+│       └── tests
+│           └── helpers.tsx
+├── .babelrc
+├── .editorconfig
+├── .env
+├── .eslintrc
+├── .gitignore
+├── .prettierrc
+├── config-overrides.js
+├── jest.config.js
+├── package.json
+├── react-app-env.d.ts
+├── README.md
+├── tsconfig.json
+└── yarn.lock
+```
