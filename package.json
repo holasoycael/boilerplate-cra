@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "react-app-rewired start"
+    "dev": "react-app-rewired start",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +45,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "plop": "^2.7.4",
     "prettier": "^2.4.1",
     "react-app-rewired": "^2.1.8",
     "react-scripts": "4.0.3",
