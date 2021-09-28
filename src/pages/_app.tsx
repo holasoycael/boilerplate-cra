@@ -1,5 +1,13 @@
+import { HashRouter } from 'react-router-dom'
+
+import Routers from 'app/routes'
+
 function App() {
-  return <div className="App">React App!</div>
+  return (
+    <HashRouter>
+      <Routers />
+    </HashRouter>
+  )
 }
 
 export default App
