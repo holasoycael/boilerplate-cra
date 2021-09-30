@@ -23,7 +23,7 @@ Inicia a cli de testes com o Jest no modo de observação interativa
 
 ### `yarn storybook`
 
-Levanta um servidor do Storybook em [localhost:3000](http://localhost:6006)
+Levanta um servidor do Storybook em [localhost:6006](http://localhost:6006)
 
 ### `yarn build`
 
