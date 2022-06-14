@@ -2,6 +2,15 @@
 
 Este boilerplate é inspirado no conteúdo do [Willian](https://willianjusten.com.br) e seu [curso](https://reactavancado.com.br).
 
+## 🌟 Quick Start
+
+Na pasta do projeto use o comando abaixo para instalação:
+```sh
+git clone https://github.com/holasoycael/boilerplate-cra.git . && rm -rf ./.git && git init && git branch -M main && git add . && git commit -m "Initial commit"
+```
+
+E agora, é só adicionar seu repositório remote ✨
+
 ## Scripts disponíveis
 
 No diretório do projeto, você pode executar:
