@@ -1,5 +1,6 @@
 import { Route, Switch } from 'react-router-dom'
 
+// components JSX
 import Home from 'pages'
 
 function Routers() {

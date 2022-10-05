@@ -1,3 +1,4 @@
+// components JSX
 import Home from 'templates/Home'
 
 const Index = () => {
