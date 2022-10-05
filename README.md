@@ -138,11 +138,13 @@ Seu aplicativo está pronto para ser implantado!
 │   │       ├── index.tsx
 │   │       ├── styles.tsx
 │   │       └── test.tsx
-│   └── utils
-│       ├── exports
-│       ├── modules
-│       └── tests
-│           └── helpers.tsx
+│   ├── typings
+│   │   ├── App.tsx
+│   │   ├── Contexts.tsx
+│   │   └── Data.ts
+│   ├── utils
+│   └── tests
+│       └── helpers.tsx
 ├── .babelrc
 ├── .editorconfig
 ├── .env
