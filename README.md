@@ -64,6 +64,17 @@ Seu aplicativo está pronto para ser implantado!
 >As tecnologias listadas acima no projeto aumentam minha produtividade e simplifica processos dentro da equipe nos dando poderes enorme no ambiente de desenvolviemnto.
 
 #
+### `Add .vscode/settings.json folder`
+```json
+{
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
+
+#
 ### `Arquitetura de projeto`
 
 ```

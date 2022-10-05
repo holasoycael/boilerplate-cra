@@ -12,8 +12,7 @@ module.exports = {
     '!src/templates/**/*.tsx',
     '!src/skeleton/**/*.tsx',
     '!src/contexts/**/*.tsx',
-    '!src/utils/modules/**/*.ts',
-    '!src/utils/exports/**/*.ts',
+    '!src/utils/*.ts',
     '!src/services/**/*.ts',
     '!src/@types/**/*.d.ts',
     '!src/app/**/*.ts(x)?'
