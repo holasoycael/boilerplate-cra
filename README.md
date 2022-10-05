@@ -87,8 +87,6 @@ Seu aplicativo está pronto para ser implantado!
 │   ├── main.js
 │   ├── preview-head.html
 │   └── preview.js
-├── .vscode
-│   └── settings.json
 ├── generators
 │   ├── templates
 │   │   ├── index.tsx.hbs
@@ -156,6 +154,5 @@ Seu aplicativo está pronto para ser implantado!
 ├── package.json
 ├── react-app-env.d.ts
 ├── README.md
-├── tsconfig.json
-└── yarn.lock
+└── tsconfig.json
 ```
